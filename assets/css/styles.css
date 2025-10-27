@@ -54,6 +54,20 @@ a {
   margin-right: auto;
 }
 
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+.break-all {
+  word-break: break-all;
+}
+
 /* =================header=================== */
 .header {
   background: #fffcf4;
@@ -316,6 +330,7 @@ a {
 }
 
 .course-list .course-item {
+  flex: 1;
   /* background: navajowhite; */
   border-radius: 12px;
   border: 1px solid #e2dfda;
@@ -353,13 +368,14 @@ a {
   line-height: 1.67;
 }
 
-.course-item .head .stats {
+.course-item .head .rating {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.course-item .stats .value {
+.course-item .rating .value {
+  text-align: center;
   color: var(--primary-color);
 }
 
