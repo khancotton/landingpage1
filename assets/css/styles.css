@@ -57,6 +57,7 @@ a {
 .line-clamp {
   display: -webkit-box;
   -webkit-line-clamp: var(--line-clamp, 1);
+  line-clamp: var(--line-clamp, 1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -144,7 +145,7 @@ a {
   border-radius: 20px;
 }
 
-.hero .hero-sumary {
+.hero .hero-summary {
   position: absolute;
   right: 0;
   bottom: 48px;
@@ -155,16 +156,16 @@ a {
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
 }
 
-.hero-sumary .item {
+.hero-summary .item {
   display: flex;
   align-items: center;
 }
 
-.hero-sumary .item + .item {
+.hero-summary .item + .item {
   margin-top: 22px;
 }
 
-.hero-sumary .icon {
+.hero-summary .icon {
   width: 48px;
   height: 48px;
   border-radius: 50%;
@@ -174,24 +175,24 @@ a {
   background: #fff9e8;
 }
 
-.hero-sumary .icon2 {
+.hero-summary .icon2 {
   background: #fcefff;
 }
-.hero-sumary .icon3 {
+.hero-summary .icon3 {
   background: #ebeaff;
 }
 
-.hero-sumary .info {
+.hero-summary .info {
   margin-left: 16px;
 }
 
-.hero-sumary .label {
+.hero-summary .label {
   color: #5f5b53;
   font-size: 1.4rem;
   line-height: 1.86;
 }
 
-.hero-sumary .title {
+.hero-summary .title {
   color: #171100;
   font-size: 1.8rem;
   font-weight: 600;
@@ -472,4 +473,70 @@ a {
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
+}
+
+/* =================features===================== */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.features .body {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.features .image {
+  display: flex;
+  gap: 30px;
+}
+
+.features .image img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+.features .lower {
+  margin-top: 34px;
+}
+
+.features .content {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.features .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
+}
+
+/* =================features-2nd===================== */
+.features-2nd {
+  margin-top: 70px;
+}
+
+.features-2nd .body {
+  flex-direction: row-reverse;
+}
+
+.features-2nd .image img {
+  width: 470px;
+  height: 440px;
+}
+
+.features-2nd .content {
+  width: 49%;
 }
