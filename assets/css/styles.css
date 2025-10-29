@@ -349,6 +349,7 @@ a {
   border-radius: 12px 12px 0 0;
   height: 278px;
   object-fit: cover;
+  flex: 1;
   width: 100%;
 }
 /* info */
@@ -539,4 +540,126 @@ a {
 
 .features-2nd .content {
   width: 49%;
+}
+
+/* =================blogs===================== */
+.blogs {
+  margin-top: 135px;
+  padding: 96px 0;
+  background: #fffcf4;
+}
+
+.blogs .blog-top {
+  text-align: center;
+}
+
+.blogs .blog-top .desc {
+  width: 448px;
+  margin: 16px auto 0;
+  color: #696262;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+
+.blogs .blog-list {
+  margin-top: 55px;
+  gap: 30px;
+  display: flex;
+  overflow: hidden;
+}
+
+.blog-list .item {
+  width: calc(33.33% - 19.5px);
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: #fff;
+  /* transform: translateX(-100%);
+  transition: all ease 0.2s; */
+}
+
+.blog-list .item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-list .item img {
+  flex: 1;
+  width: 100%;
+  height: 250px;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+}
+
+.blogs .info {
+  padding: 20px 20px 28px;
+}
+
+.blogs .item .date {
+  display: inline-flex;
+  padding-bottom: 12px;
+  align-items: center;
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+
+.blogs .item .date::before {
+  content: "";
+  display: inline-block;
+  margin-right: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-color);
+}
+
+.blogs .item .date::after {
+  position: absolute;
+  left: 0;
+  right: -27px;
+  bottom: 0;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  background: #e2dfda;
+}
+
+.blogs .item .title {
+  margin-top: 12px;
+  color: #171100;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75;
+}
+
+.blogs .item .btn {
+  margin-top: 12px;
+  font-size: 1.4rem;
+}
+
+.blogs .item .btn:hover {
+  background: var(--primary-color);
+}
+
+.blogs .dots {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 38px;
+}
+
+.blogs .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5f5b53;
+}
+
+.blogs .dot:hover {
+  cursor: pointer;
+}
+
+.blogs .dot.active {
+  background: var(--primary-color);
+  cursor: default;
 }
